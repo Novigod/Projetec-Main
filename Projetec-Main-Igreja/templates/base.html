@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/projetec.css">
+    <title>Projetec - Igreja Nossa Senhora do Bom Sucesso</title>
+    
+</head>
+<body class="banner">
+    <header class="header" id="header">
+       
+        <nav class="navbar" id="navbar">
+           
+            <img src="/static/images/logo.jpg" alt="logo" class="logo">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('atv_metas') }}">Atividades & Metas</a></li>
+                <li><a href="{{ url_for('home') }}">Sugestões</a></li>
+                <li><a href="{{ url_for('home') }}">Quem Somos</a></li>
+                <li><a href="{{ url_for('site_login') }}">Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    </main>
+    <footer class="footer" >
+        <p> | Nos Siga Nas Redes Sociais |</p>
+    </footer>
+{% block conteudo %}{% endblock %} 
+</body>
+
+</html>
